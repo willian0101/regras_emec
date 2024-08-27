@@ -55,7 +55,6 @@ h1 {
 
 /* Popup styles */
 .popup {
-    overflow: overlay;
     display: none;
     position: fixed;
     left: 0;
@@ -65,19 +64,21 @@ h1 {
     background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro */
     align-items: center;
     justify-content: center;
+    overflow: auto; /* Permite rolagem da página se necessário */
 }
 
 .popup-content {
-    margin: 15%;
-    margin-top: 85%;
     background-color: #424242; /* Cinza Escuro */
     padding: 20px;
     border-radius: 8px;
     width: 90%;
     max-width: 600px;
+    max-height: 80vh; /* Limita a altura máxima do popup */
+    overflow-y: auto; /* Permite rolagem vertical dentro do popup */
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
 }
+
 
 .popup-content h2 {
     margin-top: 0;
