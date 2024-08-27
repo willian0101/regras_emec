@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Regras dos Jogos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mural de Regras dos Jogos</h1>
+        <ul class="game-list">
+            <li><button class="game-btn" data-game="basketball">Basquete 3x3</button></li>
+            <li><button class="game-btn" data-game="soccer">Futebol</button></li>
+            <li><button class="game-btn" data-game="dodgeball">Queimada</button></li>
+            <li><button class="game-btn" data-game="volleyball">Vôlei</button></li>
+            <li><button class="game-btn" data-game="pingpong">Tênis de mesa</button></li>
+            <li><button class="game-btn" data-game="chess">Xadrez</button></li>
+        </ul>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
